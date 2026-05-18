@@ -42,8 +42,9 @@ body {
 }
 
 .header__inner {
-  width: 850px;
+  max-width: 960px;
   margin: 0 auto;
+  padding: 0 4%;
 
   display: flex;
   justify-content: space-between;
@@ -71,30 +72,37 @@ body {
 
 /* mv */
 .mv__img {
+  width: 100%;
+  max-width: 1920px;
   height: 600px;
+
   object-fit: cover;
 }
 
 /* about */
 .about {
-  padding: 80px 0;
+  max-width: 960px;
+  margin: 80px auto 100px;
+  padding: 0 4%;
+
+  text-align: center;
 }
 
 .about__title {
   width: fit-content;
   margin: 0 auto 60px;
   border-bottom: 1px solid #000000;
+
   text-align: center;
   font-size: 32px;
 }
 
 .about__content {
-  width: 960px;
-  margin: 0 auto;
-
   display: flex;
   justify-content: center;
   align-items: center;
+
+  text-align: left;
 }
 
 .about__img {
@@ -111,29 +119,33 @@ body {
   margin-bottom: 10px;
 }
 
+
 /* bicycle */
 .bicycle {
-  padding-bottom: 100px;
+  max-width: 960px;
+  margin: 0 auto 100px;
+  padding: 0 4%;
+
+  text-align: center;
 }
 
 .bicycle__title {
   width: fit-content;
   margin: 0 auto 60px;
   border-bottom: 1px solid #000000;
+
   text-align: center;
   font-size: 32px;
 }
 
 .bicycle__list {
-  width: 960px;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
 .bicycle__item {
-  width: 28%;
+  width: 32%;
 }
 
 .bicycle__name {
@@ -147,8 +159,8 @@ body {
 
 /* footer */
 .footer {
+  font-size: 0.5rem;
   padding: 10px 0;
 
   text-align: center;
-  font-size: 8px;
 }
