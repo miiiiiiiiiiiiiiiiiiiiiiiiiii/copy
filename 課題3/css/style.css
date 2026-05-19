@@ -106,7 +106,7 @@ body {
 
 .section__subtitle {
   margin-bottom: 20px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .section__text {
@@ -116,11 +116,12 @@ body {
 /* footer */
 .footer {
   width: 90%;
-  max-width: 950px;
-  margin: 0 auto 20px;
+  max-width: 960px;
+  margin: 0 auto;
 
   display: flex;
   justify-content: space-between;
 
-  font-size: 14px;
+  font-size: 0.875rem;
+  padding: 20px 0;
 }
