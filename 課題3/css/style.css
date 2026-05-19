@@ -50,7 +50,7 @@ body {
 /* header */
 .header {
   width: 90%;
-  margin: 30px auto 100px;
+  margin: 30px auto 60px;
 
   display: flex;
   align-items: center;
@@ -74,7 +74,7 @@ body {
 /* section */
 .section {
   width: 90%;
-  max-width: 920px;
+  max-width: 960px;
   margin: 0 auto 120px;
 
   display: flex;
@@ -83,11 +83,11 @@ body {
 }
 
 .section__img {
-  width: 52%;
+  width: 50%;
 }
 
 .section__body {
-  width: 42%;
+  width: 43%;
 }
 
 .section__title {
@@ -116,5 +116,5 @@ body {
   display: flex;
   justify-content: space-between;
 
-  font-size: 14px;
+  font-size: 16px;
 }

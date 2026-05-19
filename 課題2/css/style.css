@@ -139,3 +139,22 @@ body {
 .footer__copy {
   margin: 0;
 }
+
+@media screen and (max-width: 834px) {
+  .recipe {
+    flex-direction: column;
+  }
+
+  .recipe__img-area {
+    width: 100%;
+  }
+
+  .recipe__img {
+    height: auto;
+  }
+
+  .recipe__content {
+    width: 100%;
+    padding: 40px 5% 0;
+  }
+}
