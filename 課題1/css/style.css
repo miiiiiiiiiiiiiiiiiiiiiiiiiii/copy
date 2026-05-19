@@ -64,10 +64,7 @@ body {
 
 .header__list {
   display: flex;
-}
-
-.header__item {
-  margin-left: 30px;
+  gap: 30px;
 }
 
 /* mv */
