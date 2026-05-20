@@ -50,7 +50,7 @@ body {
 
 /* header */
 .header {
-  width: 90vw;
+  width: 90%;
   margin: 0 auto 30px auto;
   padding: 32px 0;
 
@@ -70,10 +70,7 @@ body {
 
 .header__list {
   display: flex;
-}
-
-.header__item {
-  margin-right: 30px;
+  gap: 30px;
 }
 
 .header__item a {
@@ -135,4 +132,44 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 1;
+}
+
+@media screen and (max-width: 834px) {
+  .mv {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .mv__img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .section {
+    flex-direction: column;
+  }
+
+  .section__img {
+    width: 100%;
+    height: auto;
+  }
+
+  .section__body {
+    width: 100%;
+    padding: 20px 0 0;
+  }
+
+  .section__text {
+    max-width: 580px;
+  }
+
+  .section--work .section__img {
+    order: 1;
+  }
+
+  .section--work .section__body {
+    order: 2;
+  }
+
 }
