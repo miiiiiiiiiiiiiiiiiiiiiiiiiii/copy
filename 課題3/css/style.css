@@ -51,18 +51,16 @@ body {
 /* header */
 .header {
   width: 90%;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 30px;
   padding: 32px 0;
 
   display: flex;
   align-items: center;
+  gap: 50px;
 }
 
 .header__logo {
-  width: auto;
   line-height: 1;
-  margin-right: 50px;
-
   font-size: 15px;
   font-weight: normal;
   font-family: Arial, Helvetica, sans-serif;
@@ -98,8 +96,6 @@ body {
 
 .section__title {
   margin-top: 10px;
-  margin-bottom: 0;
-
   font-size: 24px;
   font-weight: normal;
 }
@@ -107,7 +103,6 @@ body {
 .section__subtitle {
   margin-top: -5px;
   margin-bottom: 23px;
-  font-size: 16px;
 }
 
 .section__text {
@@ -119,16 +114,15 @@ body {
   width: 90%;
   max-width: 960px;
   margin: 0 auto;
+  padding: 20px 0;
 
   display: flex;
   justify-content: space-between;
 
-  font-size: 0.875rem;
-  padding: 20px 0;
+  font-size: 14px;
 }
 
 .footer__logo {
-  width: auto;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 1;
@@ -141,9 +135,7 @@ body {
   }
 
   .mv__img {
-    width: 100%;
     height: auto;
-    display: block;
   }
 
   .section {
@@ -152,16 +144,11 @@ body {
 
   .section__img {
     width: 100%;
-    height: auto;
   }
 
   .section__body {
     width: 100%;
     padding: 20px 0 0;
-  }
-
-  .section__text {
-    max-width: 580px;
   }
 
   .section--work .section__img {
@@ -171,5 +158,4 @@ body {
   .section--work .section__body {
     order: 2;
   }
-
 }
