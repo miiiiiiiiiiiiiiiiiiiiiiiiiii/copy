@@ -1,0 +1,303 @@
+/* BEM */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e8e2d6;
+  color: #000;
+  font-family: serif;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* 共通 */
+.section-title {
+  writing-mode: vertical-rl;
+}
+
+.section-title__ja {
+  font-size: 36px;
+  font-weight: normal;
+  letter-spacing: 6px;
+}
+
+.section-title__en {
+  margin-left: 18px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* header */
+.header {
+  position: absolute;
+  top: 60px;
+  right: 70px;
+  z-index: 10;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  color: #fff;
+}
+
+.header__logo {
+  margin-left: 60px;
+  font-size: 42px;
+  font-weight: bold;
+  writing-mode: vertical-rl;
+  letter-spacing: 8px;
+}
+
+.header__list {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 30px;
+}
+
+.header__link {
+  font-size: 16px;
+  writing-mode: vertical-rl;
+  letter-spacing: 4px;
+}
+
+/* mv */
+.mv {
+  position: relative;
+  height: 100vh;
+  background-color: #000;
+}
+
+.mv__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mv__online {
+  position: absolute;
+  left: 45px;
+  bottom: 35px;
+  padding: 35px 20px;
+  border: 1px solid #fff;
+  outline: 1px solid #777;
+  outline-offset: 8px;
+  color: #fff;
+  font-size: 14px;
+  writing-mode: vertical-rl;
+  letter-spacing: 3px;
+}
+
+/* news */
+.news {
+  padding: 190px 0 160px;
+}
+
+.news__inner {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 100px;
+}
+
+.news__list {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.news__item {
+  min-height: 300px;
+  padding: 0 35px;
+  border-left: 1px solid #000;
+  writing-mode: vertical-rl;
+}
+
+.news__item:first-child {
+  border-right: 1px solid #000;
+}
+
+.news__date {
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.news__text {
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+/* products */
+.products {
+  padding-bottom: 180px;
+}
+
+.products__inner {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  gap: 70px;
+}
+
+.products__content {
+  position: relative;
+  width: 70%;
+  margin-top: 70px;
+}
+
+.products__img {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+}
+
+.products__text-box {
+  position: absolute;
+  left: -35px;
+  bottom: -25px;
+  width: 55%;
+  padding: 45px 30px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.products__text-box--yellow {
+  background-color: rgba(200, 190, 0, 0.75);
+}
+
+/* technology */
+.technology {
+  padding-bottom: 180px;
+}
+
+.technology__inner {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 70px;
+}
+
+.technology__content {
+  position: relative;
+  width: 70%;
+  margin-top: 70px;
+}
+
+.technology__img {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+}
+
+.technology__text-box {
+  position: absolute;
+  right: -35px;
+  bottom: -25px;
+  width: 55%;
+  padding: 45px 30px;
+  background-color: rgba(130, 35, 30, 0.75);
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* shop */
+.shop__map {
+  width: 100%;
+  height: 450px;
+  border: 0;
+  vertical-align: bottom;
+}
+
+/* footer */
+.footer {
+  background-color: #000;
+  color: #fff;
+}
+
+.footer__inner {
+  position: relative;
+  min-height: 470px;
+  padding: 80px 70px 30px;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  gap: 45px;
+}
+
+.footer__logo {
+  margin-left: 35px;
+  font-size: 42px;
+  font-weight: bold;
+  writing-mode: vertical-rl;
+  letter-spacing: 8px;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 30px;
+}
+
+.footer__link {
+  font-size: 16px;
+  writing-mode: vertical-rl;
+  letter-spacing: 4px;
+}
+
+.footer__address {
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1.8;
+  writing-mode: vertical-rl;
+  letter-spacing: 3px;
+}
+
+.footer__online {
+  position: absolute;
+  left: 35px;
+  top: 80px;
+  display: flex;
+  gap: 18px;
+  writing-mode: vertical-rl;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+.footer__online-link {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #fff;
+}
+
+.footer__copy {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  font-size: 12px;
+}
