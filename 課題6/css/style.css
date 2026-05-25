@@ -7,9 +7,9 @@
 }
 
 body {
-  background-color: #e8e2d6;
+  background-color: #e6e2d7;
   color: #000;
-  font-family: serif;
+  font-family: 'Noto Serif JP', serif;
 }
 
 img {
@@ -18,7 +18,7 @@ img {
 }
 
 a {
-  color: inherit;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -28,51 +28,90 @@ ul {
 
 /* 共通 */
 .section-title {
+  font-weight: normal;
+  line-height: 1;
   writing-mode: vertical-rl;
 }
 
 .section-title__ja {
+  display: block;
   font-size: 36px;
   font-weight: normal;
-  letter-spacing: 6px;
+  letter-spacing: 0.1em;
 }
 
 .section-title__en {
-  margin-left: 18px;
+  display: block;
   font-size: 14px;
   letter-spacing: 1px;
 }
 
 /* header */
 .header {
+  width: 100%;
+  height: 100vh;
+  padding: 60px 80px;
+
   position: absolute;
-  top: 60px;
-  right: 70px;
+  top: 0;
+  left: 0;
   z-index: 10;
+
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-start;
+
   color: #fff;
 }
 
 .header__logo {
   margin-left: 60px;
-  font-size: 42px;
+
+  font-size: 43px;
   font-weight: bold;
-  writing-mode: vertical-rl;
+  line-height: 1;
   letter-spacing: 8px;
+
+  writing-mode: vertical-rl;
+}
+
+.header__nav {
+  margin-left: 25px;
 }
 
 .header__list {
   display: flex;
-  flex-direction: row-reverse;
-  gap: 30px;
+  gap: 32px;
 }
 
 .header__link {
   font-size: 16px;
+  line-height: 1;
+
   writing-mode: vertical-rl;
-  letter-spacing: 4px;
+}
+
+.header__online {
+  position: absolute;
+  left: 40px;
+  bottom: 30px;
+
+  padding: 8px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header__online-link {
+  display: block;
+
+  padding: 30px 18px;
+
+  border: 1px solid #ccc;
+
+  font-size: 16px;
+  line-height: 1.8;
+
+  writing-mode: vertical-rl;
 }
 
 /* mv */
@@ -88,78 +127,61 @@ ul {
   object-fit: cover;
 }
 
-.mv__online {
-  position: absolute;
-  left: 45px;
-  bottom: 35px;
-  padding: 35px 20px;
-  border: 1px solid #fff;
-  outline: 1px solid #777;
-  outline-offset: 8px;
-  color: #fff;
-  font-size: 14px;
-  writing-mode: vertical-rl;
-  letter-spacing: 3px;
-}
-
 /* news */
 .news {
-  padding: 190px 0 160px;
+  max-width: 1024px;
+  margin: 180px auto 180px;
+  padding: 0 20px;
+
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .news__inner {
+  width: 100%;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: center;
   align-items: flex-start;
-  gap: 100px;
 }
 
 .news__list {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.news__item {
-  min-height: 300px;
-  padding: 0 35px;
-  border-left: 1px solid #000;
+  padding: 80px 100px 0 0;
   writing-mode: vertical-rl;
 }
 
-.news__item:first-child {
-  border-right: 1px solid #000;
-}
-
 .news__date {
-  margin-left: 10px;
-  font-size: 13px;
+  border-right: 1px solid #000;
+  padding: 15px 30px 15px 5px;
+  font-size: 12px;
 }
 
 .news__text {
+  padding: 15px 0 15px 30px;
   font-size: 16px;
-  letter-spacing: 3px;
 }
 
 /* products */
 .products {
-  padding-bottom: 180px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 180px;
 }
 
 .products__inner {
-  width: 80%;
-  max-width: 1100px;
+  width: 100%;
+  max-width: 1024px;
   margin: 0 auto;
+  padding: 0 20px;
+
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-start;
-  gap: 70px;
 }
 
 .products__content {
   position: relative;
-  width: 70%;
-  margin-top: 70px;
+  width: 65%;
+  margin-top: 100px;
 }
 
 .products__img {
@@ -170,38 +192,69 @@ ul {
 
 .products__text-box {
   position: absolute;
-  left: -35px;
-  bottom: -25px;
-  width: 55%;
-  padding: 45px 30px;
+  left: -20px;
+  bottom: -20px;
+
+  width: 56%;
+
+  padding: 50px 0;
+
+  background: rgba(249, 233, 6, 0.6);
+
   color: #fff;
-  font-size: 16px;
-  line-height: 1.8;
+
   text-align: center;
+
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-.products__text-box--yellow {
-  background-color: rgba(200, 190, 0, 0.75);
+.products .section-title {
+  position: relative;
+  margin-left: 20px;
+  padding-bottom: 190px;
+
+  font-weight: normal;
+  line-height: 1;
+
+  writing-mode: vertical-lr;
+}
+
+.products .section-title__ja {
+  display: block;
+  font-size: 32px;
+  letter-spacing: 0.1em;
+}
+
+.products .section-title__en {
+  position: absolute;
+  left: 8px;
+  bottom: 40px;
+
+  font-size: 14px;
+  letter-spacing: 0;
 }
 
 /* technology */
 .technology {
-  padding-bottom: 180px;
+  display: flex;
+  margin-bottom: 180px;
 }
 
 .technology__inner {
-  width: 80%;
-  max-width: 1100px;
+  width: 100%;
+  max-width: 1024px;
   margin: 0 auto;
+  padding: 0 20px;
+
   display: flex;
   align-items: flex-start;
-  gap: 70px;
 }
 
 .technology__content {
   position: relative;
-  width: 70%;
-  margin-top: 70px;
+  width: 65%;
+  margin-top: 100px;
 }
 
 .technology__img {
@@ -212,15 +265,37 @@ ul {
 
 .technology__text-box {
   position: absolute;
-  right: -35px;
-  bottom: -25px;
-  width: 55%;
-  padding: 45px 30px;
-  background-color: rgba(130, 35, 30, 0.75);
+  right: -20px;
+  bottom: -20px;
+
+  width: 56%;
+
+  padding: 50px 0;
+
+  background: rgba(149, 42, 38, 0.6);
+
   color: #fff;
-  font-size: 16px;
-  line-height: 1.8;
+
   text-align: center;
+}
+
+.technology .section-title {
+  position: relative;
+  padding-bottom: 170px;
+}
+
+.technology .section-title__ja {
+  font-size: 32px;
+  padding-right: 20px;
+}
+
+.technology .section-title__en {
+  position: absolute;
+  left: 8px;
+  bottom: 0;
+
+  font-size: 14px;
+  letter-spacing: 0;
 }
 
 /* shop */
@@ -235,23 +310,23 @@ ul {
 .footer {
   background-color: #000;
   color: #fff;
+
+  padding: 80px 80px 30px 30px;
 }
 
 .footer__inner {
   position: relative;
-  min-height: 470px;
-  padding: 80px 70px 30px;
+  min-height: 380px;
 }
 
 .footer__content {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-start;
-  gap: 45px;
+  gap: 80px;
 }
 
 .footer__logo {
-  margin-left: 35px;
   font-size: 42px;
   font-weight: bold;
   writing-mode: vertical-rl;
@@ -261,7 +336,10 @@ ul {
 .footer__list {
   display: flex;
   flex-direction: row-reverse;
-  gap: 30px;
+
+  margin-right: 30px;
+
+  font-size: 16px;
 }
 
 .footer__link {
@@ -273,7 +351,7 @@ ul {
 .footer__address {
   font-style: normal;
   font-size: 15px;
-  line-height: 1.8;
+  line-height: 1.5;
   writing-mode: vertical-rl;
   letter-spacing: 3px;
 }
@@ -290,7 +368,7 @@ ul {
 }
 
 .footer__online-link {
-  padding-bottom: 20px;
+  padding-bottom: 14px;
   border-bottom: 1px solid #fff;
 }
 
@@ -299,5 +377,5 @@ ul {
   left: 50%;
   bottom: 30px;
   transform: translateX(-50%);
-  font-size: 12px;
+  font-size: 10px;
 }

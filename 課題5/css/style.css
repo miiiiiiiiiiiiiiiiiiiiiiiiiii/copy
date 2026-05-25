@@ -32,20 +32,19 @@ li {
   background-color: #fff;
 }
 
-
 .header__inner {
   display: flex;
   align-items: center;
   height: 80px;
-  padding-left: 8%;
+  padding-left: 120px;
 }
 
 .header__logo {
   width: 100px;
   margin-right: 60px;
-  font-size: 35px;
+  font-size: 33px;
   font-weight: normal;
-  letter-spacing: 10px;
+  letter-spacing: 11px;
   line-height: 1;
 }
 
@@ -59,17 +58,16 @@ li {
 }
 
 .header__contact {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 200px;
   height: 80px;
   margin-left: auto;
   background-color: #000;
   color: #fff;
   font-size: 12px;
-  line-height: 80px;
-  text-align: center;
 }
-
 /* mv */
 .mv {
   margin-bottom: 120px;
@@ -415,14 +413,14 @@ li {
   }
 
   .business__item {
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
 
   .business__item img {
     display: block;
     width: 95%;
     height: 480px;
-    margin: 0 auto;
+    margin: 0 auto 15px;
   }
 
   .company {
@@ -490,5 +488,12 @@ li {
     margin-bottom: 8px;
     font-size: 26px;
     letter-spacing: 9.5px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .business__item img {
+    width: 100%;
+    height: auto;
   }
 }

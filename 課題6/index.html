@@ -14,23 +14,27 @@
     <nav class="header__nav">
       <ul class="header__list">
         <li class="header__item">
-          <a href="#news" class="header__link">お知らせ</a>
+          <a href="#shop" class="header__link">店舗のご案内</a>
         </li>
         <li class="header__item">
           <a href="#products" class="header__link">商品のご紹介</a>
         </li>
         <li class="header__item">
-          <a href="#shop" class="header__link">店舗のご案内</a>
+          <a href="#news" class="header__link">お知らせ</a>
         </li>
       </ul>
     </nav>
+    
+    <div class="header__online">
+      <a href="#" class="header__online-link">
+        オンラインストアを見る
+      </a>
+    </div>
   </header>
 
   <main>
     <section class="mv">
       <img class="mv__img" src="https://placehold.jp/1500x900.png" alt="main visual">
-
-      <a href="#" class="mv__online">オンラインストアを見る</a>
     </section>
 
     <section id="news" class="news">
@@ -40,28 +44,22 @@
           <h2 class="section-title__ja">お知らせ</h2>
         </div>
 
-        <ul class="news__list">
-          <li class="news__item">
-            <time class="news__date" datetime="2021-10-01">2021.10.01</time>
-            <p class="news__text">タイトルタイトルタイトルタイトルタイトル</p>
-          </li>
-          <li class="news__item">
-            <time class="news__date" datetime="2021-10-01">2021.10.01</time>
-            <p class="news__text">タイトルタイトルタイトルタイトルタイトル</p>
-          </li>
-          <li class="news__item">
-            <time class="news__date" datetime="2021-10-01">2021.10.01</time>
-            <p class="news__text">タイトルタイトルタイトルタイトルタイトル</p>
-          </li>
-          <li class="news__item">
-            <time class="news__date" datetime="2021-10-01">2021.10.01</time>
-            <p class="news__text">タイトルタイトルタイトルタイトルタイトル</p>
-          </li>
-          <li class="news__item">
-            <time class="news__date" datetime="2021-10-01">2021.10.01</time>
-            <p class="news__text">タイトルタイトルタイトルタイトルタイトル</p>
-          </li>
-        </ul>
+        <dl class="news__list">
+          <dt class="news__date">2021.10.01</dt>
+          <dd class="news__text">タイトルタイトルタイトルタイトル</dd>
+
+          <dt class="news__date">2021.10.01</dt>
+          <dd class="news__text">タイトルタイトルタイトルタイトル</dd>
+
+          <dt class="news__date">2021.10.01</dt>
+          <dd class="news__text">タイトルタイトルタイトルタイトル</dd>
+          
+          <dt class="news__date">2021.10.01</dt>
+          <dd class="news__text">タイトルタイトルタイトルタイトル</dd>
+
+          <dt class="news__date">2021.10.01</dt>
+          <dd class="news__text">タイトルタイトルタイトルタイトル</dd>
+        </dl>
       </div>
     </section>
 
@@ -94,8 +92,10 @@
           <img class="technology__img" src="https://placehold.jp/800x500.png" alt="商品画像">
 
           <div class="technology__text-box">
-            <p>テキストテキスト</p>
-            <p>テキストテキスト</p>
+            <p>
+              テキストテキスト<br>
+              テキストテキスト
+            </p>
           </div>
         </div>
       </div>
@@ -120,27 +120,26 @@
       </div>
 
       <div class="footer__content">
+        <p class="footer__logo">創作</p>
+
+        <address class="footer__address">
+          〒106-0032 東京都港区六本木5丁目×××××<br>
+          電話：03-XXXXXXXX
+        </address>
+
         <nav class="footer__nav">
           <ul class="footer__list">
             <li class="footer__item">
-              <a href="#shop" class="footer__link">店舗のご案内</a>
+              <a href="#news" class="footer__link">お知らせ</a>
             </li>
             <li class="footer__item">
               <a href="#products" class="footer__link">商品のご紹介</a>
             </li>
             <li class="footer__item">
-              <a href="#news" class="footer__link">お知らせ</a>
+              <a href="#shop" class="footer__link">店舗のご案内</a>
             </li>
           </ul>
         </nav>
-
-        <address class="footer__address">
-          〒106-0032<br>
-          東京都港区六本木5丁目×××××<br>
-          電話：03-XXXXXXXX
-        </address>
-
-        <p class="footer__logo">創作</p>
       </div>
 
       <p class="footer__copy">&copy; SOUSAKU</p>
