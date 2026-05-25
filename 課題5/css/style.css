@@ -36,7 +36,7 @@ li {
   display: flex;
   align-items: center;
   height: 80px;
-  padding-left: 120px;
+  padding-left: clamp(16px, 8vw, 120px);
 }
 
 .header__logo {
@@ -491,9 +491,14 @@ li {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
+
   .business__item img {
     width: 100%;
     height: auto;
+  }
+
+  .company__body {
+    padding: 40px 16px;
   }
 }
